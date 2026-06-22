@@ -79,3 +79,5 @@ If you want, I can:
 ---
 
 _This README was added/updated during import to provide usage and compliance guidance._
+\n## Deployment\n\nThis repository is prepared for frontend deployment on Vercel (recommended) and backend deployment on a Node host (Render, Railway, or similar).\n\nFrontend (Vercel):\n- Connect this repository in the Vercel dashboard.\n- In Vercel Project Settings, set VITE_BACKEND_SERVER to your backend API URL (for example https://api.example.com).\n- Vercel will build the rontend folder via the root rontend/package.json using the default 
+pm run build command.\n\nBackend (recommended hosts):\n- Deploy the ackend folder to a persistent Node host (Render, Railway, or Fly.io).\n- Required backend env vars: DATABASE (MongoDB URI), JWT_SECRET, PUBLIC_SERVER_FILE, and any SMTP/email credentials.\n\nIf you want, I can deploy the backend for you to Railway/Render and finish the Vercel setup steps (you will need to provide access tokens or approve the repo connections).
